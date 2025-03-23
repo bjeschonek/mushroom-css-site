@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungi Finders</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Header & Nav -->
+    <a href="#main" class="skip-to-main">Press Enter to skip to main content</a>
+    <header class="site-header">
+        <div class="wrapper" data-width="wide">
+            <div class="site-header__inner">
+                <a href="/"><img src="assets/fungi-finders.svg" alt="Fungi Finders Logo"></a>
+                <button aria-controls="primary-nav" aria-expanded="false">
+                    <span class="visually-hidden">Menu</span>
+                    <img src="assets/hamburger.svg" alt="">
+                </button>
+                <nav id="primary-navigation" class="primary-nav">
+                    <ul role="list">
+                        <li><a href="/">Discover</a></li>
+                        <li><a href="#">Mushroom Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero section" data-padding="compact">
+            <div class="wrapper">
+                <h1 class="hero__title">Quick Reference <span>Mushroom Guide</span></h1>
+                <p>Discover a wide array of mushrooms from around the world, each with its own unique flavor profile and culinary uses.</p>
+            </div>
+            <div class="wrapper" data-width="narrow">
+                <p>Whether you're looking for earthy porcinis, delicate chanterelles, or meaty shiitakes, our selection has something for every palate.</p>
+                <p>Explore the diverse shapes, sizes, and colors of these fungi to elevate your dishes to new heights.</p>
+            </div>
+        </section>
+
+        <!-- Equal columns w/ image -->
+        <section class="section background-accent">
+            <div class="wrapper equal-columns" data-width="wide" data-gap="large" data-vertical-alignment="centered">
+                <div>
+                    <img src="assets/where-to-look.webp" alt="An individual mushroom growing from the base of a tree trunk.">
+                </div>
+                <div>
+                    <h2 class="section-title">Where to look</h2>
+                    <p>Different species grow in different types of environments. </p>
+                    <p>Forests are always a good starting place, though, with a wide range of species that grow in them.</p>
+                    <p>If you're after something specific, you can use our reference guide below to help you out.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mushroom-guide">
+            <div class="wrapper">
+                <h2 class="section-title">Get to know your mushrooms</h2>
+                <select name="" id="">
+                    <option value="all">Season: All</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                </select>
+                <select name="" id="">
+                    <option value="all">Type: All</option>
+                    <option value="edible">Edible</option>
+                    <option value="toxic">Toxic</option>
+                </select>
+                <div class="grid-auto-fit">
+                    <!-- 12 cards grid -->
+                    <div class="card">
+                        <h3 class="card__title">Chanterelle</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="summer"><span class="visually-hidden">The best season to harvest this mushroom is </span>summer</li>
+                        </ul>
+                        <p>Golden-yellow, funnel-shaped mushroom with false gills</p>
+                        <div class="card__note">
+                            <p><strong>Important notes: </strong>Has toxic look-alikes - learn proper identification</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Morel</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="toxic"><span class="visually-hidden">This mushroomn is </span>toxic</li>
+                            <li data-season="spring"><span class="visually-hidden">The best season to harvest this mushroom is </span>spring</li>
+                        </ul>
+                        <p>Distinctive honeycomb-like cap structure</p>
+                        <div class="card__note">
+                            <p><strong>Important notes: </strong>Must be cooked before eating</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Chicken of the Woods</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="summer"><span class="visually-hidden">The best season to harvest this mushroom is </span>summer</li>
+                        </ul>
+                        <p>Bright orange bracket fungus with yellow edges</p>
+                        <div class="card__note">
+                            <p><strong>Important notes: </strong>Avoid if growing on certain tree species</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Death Cap</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="toxic"><span class="visually-hidden">This mushroomn is </span>toxic</li>
+                            <li data-season="summer"><span class="visually-hidden">The best season to harvest this mushroom is </span>summer</li>
+                        </ul>
+                        <p>Pale green to white cap with white gills</p>
+                        <div class="card__note">
+                            <p><strong>Important notes: </strong>Extremely toxic - study for safety awareness</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Oyster Mushroom</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="autumn"><span class="visually-hidden">The best season to harvest this mushroom is </span>autumn</li>
+                        </ul>
+                        <p>Fan-shaped caps growing in clusters</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Great beginner mushroom, few look-alikes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Lion's Mane</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="autumn"><span class="visually-hidden">The best season to harvest this mushroom is </span>autumn</li>
+                        </ul>
+                        <p>White, shaggy appearance like a lion's mane</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>No toxic look-alikes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Destroying Angel</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="toxic"><span class="visually-hidden">This mushroomn is </span>toxic</li>
+                            <li data-season="summer"><span class="visually-hidden">The best season to harvest this mushroom is </span>summer</li>
+                        </ul>
+                        <p>Pure white mushroom with a sack-like base</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Deadly toxic - study for safety awareness</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">King Bolete</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="summer"><span class="visually-hidden">The best season to harvest this mushroom is </span>summer</li>
+                        </ul>
+                        <p>Large brown cap with thick stem</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Learn to distinguish from similar species</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Shaggy Mane</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="autumn"><span class="visually-hidden">The best season to harvest this mushroom is </span>autumn</li>
+                        </ul>
+                        <p>Tall white mushroom with shaggy scales</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Must be harvested and eaten quickly</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Maitake</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="autumn"><span class="visually-hidden">The best season to harvest this mushroom is </span>autumn</li>
+                        </ul>
+                        <p>Large, feathery clusters with overlapping gray-brown caps</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Also known as Hen of the Woods - no toxic look-alikes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">False Morel</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="toxic"><span class="visually-hidden">This mushroomn is </span>toxic</li>
+                            <li data-season="spring"><span class="visually-hidden">The best season to harvest this mushroom is </span>spring</li>
+                        </ul>
+                        <p>Brain-like, reddish-brown cap with irregular shape</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Highly toxic - often confused with true morels</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Matsutake</h3>
+                        <ul class="tag-list" role="list" aria-label="Mushroom Characteristics">
+                            <li data-edible="edible"><span class="visually-hidden">This mushroomn is </span>edible</li>
+                            <li data-season="autumn"><span class="visually-hidden">The best season to harvest this mushroom is </span>autumn</li>
+                        </ul>
+                        <p>White to brown cap with thick stem and distinct spicy aroma</p>
+                        <div class="card__note">
+                            <p><strong>Safety Warning: </strong>Verify identification - has toxic look-alikes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-extra-dark section">
+            <div class="wrapper" data-width="wide">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="card">
+                    <img src="assets/start-foraging.webp" alt="A brown straw basket containing a variety of mushrooms sitting on the ground covered in brown leaves.">
+                    <h3 class="card__title">What do I need to start mushroom foraging?</h3>
+                    <p>You'll need a local field guide, a sharp knife or scissors, a basket or mesh bag for collecting, and paper bags for separating specimens. Bring a small brush for cleaning, wear sturdy boots, and carry a GPS device or compass to track your location. A camera is also helpful to document your finds.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/identify-mushrooms.webp" alt="The top corner of a book that helps to identify mushrooms with a mushroom on it, sitting on a brown surface.">
+                    <h3 class="card__title">How can I identify edible mushrooms?</h3>
+                    <p>Learn from experienced foragers and reliable guidebooks - never rely on apps alone. Study each mushroom's specific features like cap shape, gill structure, stem characteristics, and spore prints. Start with easily identifiable species that have no poisonous lookalikes, and never eat anything unless you're completely certain of its identification.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/where-to-find.webp" alt="A mushroom with a white stem and reddish top growing upright under a thin pile of brown leaves, surrounded by more brown leaves on the ground.">
+                    <h3 class="card__title">Where can I find foraging spots?</h3>
+                    <p>Look in deciduous forests, especially near oak and maple trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on public lands where it's allowed, and always check local regulations. Remember to get permission for private property and keep your best locations private to prevent over-harvesting.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/best-seasons.webp" alt="A close up shot with a single mushroom with a white step, red top with white spots growing from the ground surrounded by an abundance of orange leaves.">
+                    <h3 class="card__title">What are the best seasons for mushroom foraging?</h3>
+                    <p>Spring is ideal for morels, late summer brings chanterelles and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some species can even be found in winter, especially in milder climates. Each season offers different varieties, so year-round foraging is possible.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__title">Happy Foraging!</p>
+        <p>contact@fungifinders.com</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- https://www.figma.com/design/XV3mC19r1ih4SymTnKQu4f/FungiFinders -->
