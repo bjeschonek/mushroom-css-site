@@ -18,16 +18,16 @@
     <header class="site-header">
         <div class="wrapper" data-width="wide">
             <div class="site-header__inner">
-                <a href="/"><img src="assets/fungi-finders.svg" alt="Fungi Finders Logo"></a>
+                <a href="index.html"><img src="assets/fungi-finders.svg" alt="Fungi Finders Logo"></a>
                 <button aria-controls="primary-nav" aria-expanded="false">
                     <span class="visually-hidden">Menu</span>
                     <img src="assets/hamburger.svg" alt="">
                 </button>
                 <nav id="primary-navigation" class="primary-nav">
                     <ul role="list">
-                        <li><a href="/">Discover</a></li>
-                        <li><a href="#">Mushroom Guide</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="index.html">Discover</a></li>
+                        <li><a href="mushroom-guide.html">Mushroom Guide</a></li>
+                        <li><a href="mushroom-guide.html#faq">FAQ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -62,21 +62,24 @@
             </div>
         </section>
 
-        <section class="section mushroom-guide">
+        <!-- Mushroom Guide -->
+        <section id="faq" class="section mushroom-guide">
             <div class="wrapper">
                 <h2 class="section-title">Get to know your mushrooms</h2>
-                <select name="" id="">
-                    <option value="all">Season: All</option>
-                    <option value="spring">Spring</option>
-                    <option value="summer">Summer</option>
-                    <option value="autumn">Autumn</option>
-                </select>
-                <select name="" id="">
-                    <option value="all">Type: All</option>
-                    <option value="edible">Edible</option>
-                    <option value="toxic">Toxic</option>
-                </select>
-                <div class="grid-auto-fit">
+                <div class="flex-group">
+                    <select name="season" id="season">
+                        <option value="all">Season: All</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="autumn">Autumn</option>
+                    </select>
+                    <select name="edible" id="edible">
+                        <option value="all">Type: All</option>
+                        <option value="edible">Edible</option>
+                        <option value="toxic">Toxic</option>
+                    </select>
+                </div>
+                <div class="grid-auto-fill">
                     <!-- 12 cards grid -->
                     <div class="card">
                         <h3 class="card__title">Chanterelle</h3>
@@ -210,32 +213,36 @@
                             <p><strong>Safety Warning: </strong>Verify identification - has toxic look-alikes</p>
                         </div>
                     </div>
+                    <div class="no-matches" hidden>No matches for this filter.</div>
                 </div>
             </div>
         </section>
 
+        <!-- Bento grid -->
         <section class="background-extra-dark section">
             <div class="wrapper" data-width="wide">
                 <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="card">
-                    <img src="assets/start-foraging.webp" alt="A brown straw basket containing a variety of mushrooms sitting on the ground covered in brown leaves.">
-                    <h3 class="card__title">What do I need to start mushroom foraging?</h3>
-                    <p>You'll need a local field guide, a sharp knife or scissors, a basket or mesh bag for collecting, and paper bags for separating specimens. Bring a small brush for cleaning, wear sturdy boots, and carry a GPS device or compass to track your location. A camera is also helpful to document your finds.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/identify-mushrooms.webp" alt="The top corner of a book that helps to identify mushrooms with a mushroom on it, sitting on a brown surface.">
-                    <h3 class="card__title">How can I identify edible mushrooms?</h3>
-                    <p>Learn from experienced foragers and reliable guidebooks - never rely on apps alone. Study each mushroom's specific features like cap shape, gill structure, stem characteristics, and spore prints. Start with easily identifiable species that have no poisonous lookalikes, and never eat anything unless you're completely certain of its identification.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/where-to-find.webp" alt="A mushroom with a white stem and reddish top growing upright under a thin pile of brown leaves, surrounded by more brown leaves on the ground.">
-                    <h3 class="card__title">Where can I find foraging spots?</h3>
-                    <p>Look in deciduous forests, especially near oak and maple trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on public lands where it's allowed, and always check local regulations. Remember to get permission for private property and keep your best locations private to prevent over-harvesting.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/best-seasons.webp" alt="A close up shot with a single mushroom with a white step, red top with white spots growing from the ground surrounded by an abundance of orange leaves.">
-                    <h3 class="card__title">What are the best seasons for mushroom foraging?</h3>
-                    <p>Spring is ideal for morels, late summer brings chanterelles and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some species can even be found in winter, especially in milder climates. Each season offers different varieties, so year-round foraging is possible.</p>
+                <div class="faq-bento">
+                    <div class="card">
+                        <img src="assets/start-foraging.webp" alt="A brown straw basket containing a variety of mushrooms sitting on the ground covered in brown leaves.">
+                        <h3 class="card__title">What do I need to start mushroom foraging?</h3>
+                        <p>You'll need a local field guide, a sharp knife or scissors, a basket or mesh bag for collecting, and paper bags for separating specimens. Bring a small brush for cleaning, wear sturdy boots, and carry a GPS device or compass to track your location. A camera is also helpful to document your finds.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/identify-mushrooms.webp" alt="The top corner of a book that helps to identify mushrooms with a mushroom on it, sitting on a brown surface.">
+                        <h3 class="card__title">How can I identify edible mushrooms?</h3>
+                        <p>Learn from experienced foragers and reliable guidebooks - never rely on apps alone. Study each mushroom's specific features like cap shape, gill structure, stem characteristics, and spore prints. Start with easily identifiable species that have no poisonous lookalikes, and never eat anything unless you're completely certain of its identification.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/where-to-find.webp" alt="A mushroom with a white stem and reddish top growing upright under a thin pile of brown leaves, surrounded by more brown leaves on the ground.">
+                        <h3 class="card__title">Where can I find foraging spots?</h3>
+                        <p>Look in deciduous forests, especially near oak and maple trees, and in damp, shaded areas. Fallen logs and dead trees are often productive spots. Only forage on public lands where it's allowed, and always check local regulations. Remember to get permission for private property and keep your best locations private to prevent over-harvesting.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/best-seasons.webp" alt="A close up shot with a single mushroom with a white step, red top with white spots growing from the ground surrounded by an abundance of orange leaves.">
+                        <h3 class="card__title">What are the best seasons for mushroom foraging?</h3>
+                        <p>Spring is ideal for morels, late summer brings chanterelles and boletes, and fall is peak season for most mushrooms including oysters and hen of the woods. Some species can even be found in winter, especially in milder climates. Each season offers different varieties, so year-round foraging is possible.</p>
+                    </div>
                 </div>
             </div>
         </section>
