@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function filterMushrooms() {
     const mushroomCards = document.querySelectorAll('.mushroom-guide .card');
     const seasonalSelect = document.querySelector('#season');
     const edibleSelect = document.querySelector('#edible');
-    const noResultsMsg = this.documentElement.querySelector('.no-matches');
+    const noResultsMsg = document.querySelector('.no-matches');
 
     const currentFilters = {
         season: 'all',
@@ -43,4 +43,4 @@ document.addEventListener('DOMContentLoaded', function filterMushrooms() {
             }
         });
     }
-})
+});
